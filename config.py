@@ -10,31 +10,31 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7381849410:AAEdcGfp1W41Q5SYAPIavcZ3HHMc7SYk8l8")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7280734409:AAGXg2fw25i6HTXwhZXFsS_jijXIgzfWozQ")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "22225617"))
+APP_ID = int(os.environ.get("APP_ID", "22615660"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "ef16f7597376f1689663304c954e4493")
+API_HASH = os.environ.get("API_HASH", "906e31e7abb5b7bc2990f8f78e8e4a78")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001602208028"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002116232445"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6072149828"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6119769857"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://akmonsterprogrammer:S.Aruna1155182089@store.sscpbr1.mongodb.net/?retryWrites=true&w=majority&appName=store")
-DB_NAME = os.environ.get("DATABASE_NAME", "store")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://akmonsterprogrammer:S.Aruna1155182089@anime.n68t8wz.mongodb.net/?retryWrites=true&w=majority&appName=anime")
+DB_NAME = os.environ.get("DATABASE_NAME", "anime")
 
 #force sub channel id, if you want enable force sub
 FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "-1002145921498"))
 FORCESUB_CHANNEL2 = int(os.environ.get("FORCESUB_CHANNEL2", '-1002044250842'))
-FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL3", '-1002145921498'))
+FORCESUB_CHANNEL3 = int(os.environ.get("FORCESUB_CHANNEL3", '-1002107568197'))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -43,15 +43,15 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "publicearn.com")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "5f14184b5d330486d0ebcb32127fdca5b03c8b42")
-VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
-IS_VERIFY = os.environ.get("IS_VERIFY", "False")
+VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 3600)) # Add time in seconds
+IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","MrAK_LinkZz/5")
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ {first}\n\n ɪ ᴀᴍ ᴍᴜʟᴛɪ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ , ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ » @ultroidofficial</b>")
 try:
-    ADMINS=[6072149828]
-    for x in (os.environ.get("ADMINS", "6072149828").split()):
+    ADMINS=[6119769857]
+    for x in (os.environ.get("ADMINS", "6119769857").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -72,7 +72,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "ʙᴀᴋᴋᴀ ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ ꜱᴇɴᴘᴀɪ!!\n\n» ᴍʏ ᴏᴡɴᴇʀ : @ultroidxTeam"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6072149828)
+ADMINS.append(6119769857)
 
 LOG_FILE_NAME = "codeflixbots.txt"
 
